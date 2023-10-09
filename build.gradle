@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+
+group 'CursoUdemy'
+version '1.0.0'
+
+//Version de JDK
+sourceCompatibility = 17
+
+repositories {
+    mavenCentral()
+}
+
+dependencies { 
+// https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.12.1'
+testImplementation 'io.cucumber:cucumber-java:6.0.0' 
+testImplementation 'io.cucumber:cucumber-junit:6.0.0' 
+implementation 'org.slf4j:slf4j-simple:1.7.25'
+// https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber7-adapter
+implementation group: 'tech.grasshopper', name: 'extentreports-cucumber6-adapter', version: '1.0.0'
+
+}
+
+test{
+
+    systemProperty "cucumber.options", System.getProperty("cucumber.options")
+}

@@ -1,0 +1,189 @@
+[
+  {
+    "line": 4,
+    "elements": [
+      {
+        "start_timestamp": "2023-10-08T11:29:09.300Z",
+        "line": 16,
+        "name": "As customer then I search for Alexa. I want to see if the third option on the second page is available for purchase and can be added to the cart.",
+        "description": "",
+        "id": "test-amazon-search-functionality;as-customer-then-i-search-for-alexa.-i-want-to-see-if-the-third-option-on-the-second-page-is-available-for-purchase-and-can-be-added-to-the-cart.;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 2119200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3507960200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user navigates to www.amazon.com",
+            "match": {
+              "location": "steps.AmazonSeach.navigateToAmazon()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2598383400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "searches for Toalla de baño",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Toalla de baño",
+                  "offset": 13
+                }
+              ],
+              "location": "steps.AmazonSeach.enterSearchCriteria(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5074019000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "selects the third item",
+            "match": {
+              "location": "steps.AmazonSeach.selectThirdsItem()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2236001000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the user is able to add it to the Cart",
+            "match": {
+              "location": "steps.AmazonSeach.itemCanBeAddedToCart()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Amazon"
+          },
+          {
+            "name": "@Cart"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-10-08T11:29:22.798Z",
+        "line": 17,
+        "name": "As customer then I search for Alexa. I want to see if the third option on the second page is available for purchase and can be added to the cart.",
+        "description": "",
+        "id": "test-amazon-search-functionality;as-customer-then-i-search-for-alexa.-i-want-to-see-if-the-third-option-on-the-second-page-is-available-for-purchase-and-can-be-added-to-the-cart.;;3",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1029378100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user navigates to www.amazon.com",
+            "match": {
+              "location": "steps.AmazonSeach.navigateToAmazon()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2042038600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "searches for pintura de uñas",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pintura de uñas",
+                  "offset": 13
+                }
+              ],
+              "location": "steps.AmazonSeach.enterSearchCriteria(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5445298800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "selects the third item",
+            "match": {
+              "location": "steps.AmazonSeach.selectThirdsItem()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1319487800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the user is able to add it to the Cart",
+            "match": {
+              "location": "steps.AmazonSeach.itemCanBeAddedToCart()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Amazon"
+          },
+          {
+            "name": "@Cart"
+          }
+        ]
+      }
+    ],
+    "name": "Test amazon search functionality",
+    "description": "",
+    "id": "test-amazon-search-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Google.feature",
+    "tags": [
+      {
+        "name": "@Amazon",
+        "type": "Tag",
+        "location": {
+          "line": 3,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
