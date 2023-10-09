@@ -20,7 +20,7 @@ public class AmazonSeach {
         amazon.clickSeach();  
     }
     
-    
+    //Comentario2
     //@And("^navigates to the second page$")
     //public void navigateToSecondPage(){
     //    amazon.goToPage2(); 
